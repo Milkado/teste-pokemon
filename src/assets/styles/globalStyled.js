@@ -1,6 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
+import font from "./resources/OpenSans-Light.ttf";
+
+
 
 export default createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
   * {
     box-sizing: border-box;
     margin: 0;
@@ -22,6 +27,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #222;
+
   }
 
   a,

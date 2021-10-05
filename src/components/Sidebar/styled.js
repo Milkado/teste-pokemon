@@ -27,7 +27,7 @@ export const SideBarItem = styled.li`
     color: #004a45;
     cursor: pointer;
     transition: all .2s;
-    background-color: #00d68f;
+    background-color: ${props => props.pokemon ? 'white' : '#00d68f'};
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,5 +39,10 @@ export const SideBarItem = styled.li`
 
     &:not(last-of-type) {
         margin-bottom: 1.6rem;
+    }
+
+    img {
+      object-fit: contain;
+      height: 50px;
     }
 `;
